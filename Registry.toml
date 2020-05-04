@@ -3,6 +3,10 @@ repo = "git@github.com:SmartMonitoringSchemes/Registry.git"
 uuid = "bab96e84-c8f8-4ca3-85f9-6ca5c8f91499"
 description = ""
 
+[packages.d69f1d75-0f53-4bd4-8114-76337d5140b8]
+name = "HDPHMM"
+path = "packages/HDPHMM"
+
 [packages.9aa3e4a5-e084-4c6a-9aeb-c6df264de966]
 name = "ParsimoniousMonitoring"
 path = "packages/ParsimoniousMonitoring"
