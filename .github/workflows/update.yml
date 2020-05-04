@@ -12,7 +12,7 @@ jobs:
     
     steps:
       - uses: actions/checkout@v2
-      - uses: webfactory/ssh-agent@4d1295c53b0ee6c012b6998f7155a09b271a52f5
+      - uses: webfactory/ssh-agent@b6c65be
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - uses: julia-actions/setup-julia@latest
