@@ -1,0 +1,32 @@
+name: Registry Update
+
+on:
+  push:
+    branches: 'master'
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      - uses: webfactory/ssh-agent@4d1295c53b0ee6c012b6998f7155a09b271a52f5
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - uses: julia-actions/setup-julia@latest
+        with:
+          version: 1.2.0
+      - name: "Update registry"
+        run: julia tools/update.jl
+      - name: "Commit changes"
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff-index --quiet HEAD || git commit -m "Update Registry"
+      - name: "Push changes"
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
