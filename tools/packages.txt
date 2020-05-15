@@ -1,2 +1,3 @@
 git@github.com:SmartMonitoringSchemes/HDPHMM.jl.git
 git@github.com:SmartMonitoringSchemes/ParsimoniousMonitoring.git
+git@github.com:SmartMonitoringSchemes/Shao17.git
