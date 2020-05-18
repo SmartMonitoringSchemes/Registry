@@ -11,6 +11,14 @@ path = "packages/Shao17"
 name = "HDPHMM"
 path = "packages/HDPHMM"
 
+[packages.0b19c0f4-19f3-4727-9da2-24007579b29a]
+name = "ModelsIO"
+path = "packages/ModelsIO"
+
 [packages.9aa3e4a5-e084-4c6a-9aeb-c6df264de966]
 name = "ParsimoniousMonitoring"
 path = "packages/ParsimoniousMonitoring"
+
+[packages.795b8d18-bbeb-4217-80b2-db63563e71da]
+name = "LargeScaleAnalysis"
+path = "packages/LargeScaleAnalysis"
