@@ -3,10 +3,6 @@ repo = "git@github.com:SmartMonitoringSchemes/Registry.git"
 uuid = "bab96e84-c8f8-4ca3-85f9-6ca5c8f91499"
 description = ""
 
-[packages.a2da212f-ac99-4a31-a4a0-88b7a61e1298]
-name = "Shao17"
-path = "packages/Shao17"
-
 [packages.d69f1d75-0f53-4bd4-8114-76337d5140b8]
 name = "HDPHMM"
 path = "packages/HDPHMM"
@@ -14,11 +10,3 @@ path = "packages/HDPHMM"
 [packages.c2d32e4c-7064-491d-a5e3-8549892f5912]
 name = "ThesisTools"
 path = "packages/ThesisTools"
-
-[packages.795b8d18-bbeb-4217-80b2-db63563e71da]
-name = "LargeScaleAnalysis"
-path = "packages/LargeScaleAnalysis"
-
-[packages.9aa3e4a5-e084-4c6a-9aeb-c6df264de966]
-name = "ParsimoniousMonitoring"
-path = "packages/ParsimoniousMonitoring"
