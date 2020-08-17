@@ -1,5 +1,5 @@
 git@github.com:SmartMonitoringSchemes/HDPHMM.jl.git
-git@github.com:SmartMonitoringSchemes/ModelsIO.git
-git@github.com:SmartMonitoringSchemes/ParsimoniousMonitoring.git
 git@github.com:SmartMonitoringSchemes/LargeScaleAnalysis.git
+git@github.com:SmartMonitoringSchemes/ParsimoniousMonitoring.git
 git@github.com:SmartMonitoringSchemes/Shao17.git
+git@github.com:SmartMonitoringSchemes/ThesisTools.git
