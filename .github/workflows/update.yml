@@ -1,4 +1,4 @@
-name: Registry Update
+name: Update
 
 on:
   push:
@@ -9,24 +9,11 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    
     steps:
       - uses: actions/checkout@v3
-      - uses: webfactory/ssh-agent@v0.5.4
+      - uses: julia-actions/setup-julia@v1
+      - run: julia tools/update.jl
+      - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-      - uses: julia-actions/setup-julia@latest
-        with:
-          version: 1.2.0
-      - name: "Update registry"
-        run: julia tools/update.jl
-      - name: "Commit changes"
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git diff-index --quiet HEAD || git commit -m "Update Registry"
-      - name: "Push changes"
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+        continue-on-error: true

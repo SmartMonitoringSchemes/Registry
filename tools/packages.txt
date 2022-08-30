@@ -1,2 +1,2 @@
-git@github.com:SmartMonitoringSchemes/HDPHMM.jl.git
-git@github.com:SmartMonitoringSchemes/ThesisTools.git
+https://github.com/SmartMonitoringSchemes/HDPHMM.jl.git
+https://github.com/SmartMonitoringSchemes/ThesisTools.git

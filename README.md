@@ -1,11 +1,11 @@
 # Registry
 
-![Update](https://github.com/SmartMonitoringSchemes/Registry/workflows/Registry%20Update/badge.svg)
+[![Update](https://img.shields.io/github/workflow/status/SmartMonitoringSchemes/Registry/Update?logo=github&label=update)](https://github.com/SmartMonitoringSchemes/Registry/actions/workflows/update.yml)
 
 ```julia
-pkg> registry add git@github.com:SmartMonitoringSchemes/Registry.git
+pkg> registry add https://github.com/SmartMonitoringSchemes/Registry
 pkg> registry st
 # Registry Status 
 #  [23338594] General (https://github.com/JuliaRegistries/General.git)
-#  [bab96e84] SmartMonitoringSchemes (git@github.com:SmartMonitoringSchemes/Registry.git)
+#  [bab96e84] SmartMonitoringSchemes (https://github.com:SmartMonitoringSchemes/Registry)
 ```
