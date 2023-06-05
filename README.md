@@ -1,6 +1,6 @@
 # Registry
 
-[![Update](https://img.shields.io/github/workflow/status/SmartMonitoringSchemes/Registry/Update?logo=github&label=update)](https://github.com/SmartMonitoringSchemes/Registry/actions/workflows/update.yml)
+[![Update](https://img.shields.io/github/actions/workflow/status/SmartMonitoringSchemes/Registry/update.yml?logo=github&label=update)](https://github.com/SmartMonitoringSchemes/Registry/actions/workflows/update.yml)
 
 ```julia
 pkg> registry add https://github.com/SmartMonitoringSchemes/Registry
